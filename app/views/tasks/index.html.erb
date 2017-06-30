@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Sad Butler</h1>
+<h5>A to-do list app from hell</h5>
+
+<table class="table table-hover">
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Due date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tasks.each do |task| %>
+      <tr>
+        <td><%= task.title %></td>
+        <td><%= task.description %></td>
+        <td><%= task.due_date %></td>
+        <td><%= link_to 'Show', task, class:"btn btn-primary active" %></td>
+        <td><%= link_to 'Edit', edit_task_path(task), class:"btn btn-success active" %></td>
+        <td><%= link_to 'DEAD', task, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger" %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</table>
+
+<br>
+
+<%= link_to 'New Task', new_task_path, class:"btn btn-default btn-lg" %>
