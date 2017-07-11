@@ -5,14 +5,14 @@
 #   gem 'sqlite3'
 #
 default: &default
-    adapter: postgresql
+  adapter: postgresql
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
 
 development:
   <<: *default
   # database: db/development.sqlite3
-  database: todo-dev
+  database: tasks-dev
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -20,9 +20,9 @@ development:
 test:
   <<: *default
   # database: db/test.sqlite3
-  database: todo-test
+  database: tasks-test
 
 production:
   <<: *default
   # database: db/production.sqlite3
-  database: todo-prod
+  database: tasks-prod
