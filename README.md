@@ -1,24 +1,12 @@
-# README
+# Sad Butler An imprudent to-do list app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Feel encouraged to enter the simplest tasks, in the most dreadful 
+ways so to match the crimson "dead" button, and the uplifting name of the app.
 
-Things you may want to cover:
+CHEERIO!
 
-* Ruby version
+Trinkets used:
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Ruby version 2.4.1.
+* Rails 5
+* Atom
